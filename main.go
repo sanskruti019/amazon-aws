@@ -33,7 +33,7 @@ func main() {
 	crudRoutes.GET("/get/:id", crudHandler.GetById)
 	crudRoutes.PUT("/update/:id", crudHandler.Update)
 
-	err := r.Run("0.0.0.0:8090")
+	err := r.Run("0.0.0.0:8091")
 	if err != nil {
 		log.Println("Error starting the gin server")
 		return
